@@ -1,0 +1,32 @@
+---
+import {Image} from "astro:assets";
+import profile_sm from "../images/profile-sm.jpeg";
+---
+
+<div class="aboutme--container">
+    <p>
+        Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+        odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </p>
+
+    <div class="profile--pic">
+        <Image src={profile_sm} alt="Abraham Jimenez"/>
+    </div>
+</div>
+
+<style>
+    .aboutme--container {
+        display: flex;
+        text-align: right;
+    }
+
+    .profile--pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 92%;
+        height: auto;
+    }
+</style>
