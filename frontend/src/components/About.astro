@@ -1,6 +1,6 @@
 ---
 import {Image} from "astro:assets";
-import profile_sm from "../images/profile-sm.jpeg";
+import profile from "../images/profile.jpeg";
 ---
 
 <div class="aboutme--container">
@@ -10,7 +10,7 @@ import profile_sm from "../images/profile-sm.jpeg";
     </p>
 
     <div class="profile--pic">
-        <Image src={profile_sm} alt="Abraham Jimenez"/>
+        <Image src={profile} alt="Abraham Jimenez"/>
     </div>
 </div>
 
@@ -23,6 +23,7 @@ import profile_sm from "../images/profile-sm.jpeg";
     .profile--pic {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     img {

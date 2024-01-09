@@ -1,11 +1,14 @@
 ---
 import {Image} from "astro:assets";
 import profile_sm from "../images/profile-sm.jpeg";
+import heartset from "../images/heartset.png";
 ---
 
 <div class="aboutme--container">
     <div class="profile--pic">
-        <Image src={profile_sm} alt="Abraham Jimenez"/>
+        <a href="https://abrahamjimenez.github.io/HeartSet/" target="_blank">
+            <Image src={heartset} alt="Heartset"/>
+        </a>
     </div>
 
     <p>
@@ -16,13 +19,14 @@ import profile_sm from "../images/profile-sm.jpeg";
 
 <style>
     .aboutme--container {
-        display: flex;
-        text-align: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .profile--pic {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     img {

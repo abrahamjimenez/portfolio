@@ -1,6 +1,7 @@
 ---
 import {Image} from "astro:assets";
 import profile_sm from "../images/profile-sm.jpeg";
+import proshop from "../images/proshop.png";
 ---
 
 <div class="aboutme--container">
@@ -10,19 +11,22 @@ import profile_sm from "../images/profile-sm.jpeg";
     </p>
 
     <div class="profile--pic">
-        <Image src={profile_sm} alt="Abraham Jimenez"/>
+        <a href="https://proshop-ku28.onrender.com" target="_blank">
+            <Image src={proshop} alt="Proshop"/>
+        </a>
     </div>
 </div>
 
 <style>
     .aboutme--container {
-        display: flex;
-        text-align: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .profile--pic {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     img {
